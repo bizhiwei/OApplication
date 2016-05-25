@@ -7,6 +7,9 @@ import android.view.WindowManager;
 
 public class MainActivity extends Activity {
 
+    /**
+     * 主要的opengl view
+     */
     private OpenGLView mOpenGLView;
 
     @Override
@@ -16,8 +19,8 @@ public class MainActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         //设置全屏
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         mOpenGLView = new OpenGLView(this);
         setContentView(mOpenGLView);
+        //
     }
 }
